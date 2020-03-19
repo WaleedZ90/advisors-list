@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Abel");
+
+html,
+body {
+	background: #fceeb5;
+	font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+body {
+	margin: auto;
+	padding: 30px;
+}
+
+.grid {
+	display: grid;
+	grid-column-gap: 15px;
+	grid-row-gap: 15px;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 576px) {
+	body {
+		width: 576px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		width: 768px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		width: 1200px;
+	}
+
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
