@@ -51,7 +51,7 @@ const AdvisorsList = () => {
 		return <h3>Loading...</h3>;
 	}
 
-	if (advisors.length == 0) {
+	if (advisors.length === 0) {
 		return <h3>no advisors found</h3>;
 	}
 
@@ -77,21 +77,22 @@ const AdvisorsList = () => {
 	const renderAdvisorsList = () => {
 		let advisorsToRender = advisors;
 
+		// eslint-disable-next-line
 		if (filters.reviews != "" || filters.reviews != 0) {
 			advisorsToRender = advisorsToRender.filter(
 				advisor => advisor.reviews <= filters.reviews
 			);
 		}
 
-		if (filters.status.id != 0) {
+		if (filters.status.id !== 0) {
 			advisorsToRender = advisorsToRender.filter(
-				advisor => advisor.status == filters.status.label
+				advisor => advisor.status === filters.status.label
 			);
 		}
 
-		if (filters.language.id != 0) {
+		if (filters.language.id !== 0) {
 			advisorsToRender = advisorsToRender.filter(
-				advisor => advisor.language == filters.language.label
+				advisor => advisor.language === filters.language.label
 			);
 		}
 

@@ -25,7 +25,7 @@ const Dropdown = ({
 			{items.map((item, index) => (
 				<option
 					key={index}
-					selected={item.id == value.id}
+					selected={item.id === value.id}
 					value={JSON.stringify(item)}
 				>
 					{item.label}

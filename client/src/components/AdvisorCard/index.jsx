@@ -31,7 +31,7 @@ const AdvisorCard = ({
 			>
 				<figure>
 					<span>{status}</span>
-					<img src={image} alt="advisor image" />
+					<img src={image} alt={name} />
 					<figcaption>{reviews} REVIEWS</figcaption>
 				</figure>
 				<section className="more-info">
