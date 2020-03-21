@@ -13,15 +13,16 @@
 	"author": "Waleed",
 	"license": "MIT",
 	"dependencies": {
-		"express": "^4.17.1",
-		"faker": "4.1.0",
 		"colors": "^1.4.0",
 		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"faker": "4.1.0",
 		"mongoose": "^5.9.2",
 		"morgan": "^1.9.1"
 	},
 	"devDependencies": {
 		"concurrently": "^5.1.0",
+		"enzyme": "^3.11.0",
 		"nodemon": "^2.0.2"
 	}
 }

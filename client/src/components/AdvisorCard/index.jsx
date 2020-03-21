@@ -2,6 +2,13 @@ import React from "react";
 import classNames from "classnames";
 import "./styles.scss";
 
+const flags = {
+	English: <span className="flag-icon flag-icon-gb-eng"></span>,
+	German: <span className="flag-icon flag-icon-de"></span>,
+	Italian: <span className="flag-icon flag-icon-it"></span>,
+	French: <span className="flag-icon flag-icon-fr"></span>
+};
+
 const AdvisorCard = ({
 	name,
 	email,
@@ -29,15 +36,15 @@ const AdvisorCard = ({
 				</figure>
 				<section className="more-info">
 					<h2>{name}</h2>
-					<div class="coords">
+					<div className="coords">
 						<span>Website</span>
 						<span>{website}</span>
 					</div>
-					<div class="coords">
+					<div className="coords">
 						<span>Email</span>
 						<span>{email}</span>
 					</div>
-					<div class="coords">
+					<div className="coords">
 						<span>Address</span>
 						<span>{address}</span>
 					</div>
@@ -45,13 +52,12 @@ const AdvisorCard = ({
 			</aside>
 			<section className="general">
 				<h2>{name}</h2>
+				{flags[language]}
 				<p>{bio}</p>
 				<span className="more">Mouse over the card for more info</span>
 			</section>
 		</article>
 	);
 };
-
-// https://codepen.io/alvaromontoro/pen/ebPEWb?editors=1100
 
 export default AdvisorCard;

@@ -17,11 +17,13 @@ body {
 	grid-row-gap: 15px;
 }
 
-.center {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.form-control {
+	padding: 16px 0;
+	font-size: 14px;
+	width: 100%;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid black;
 }
 
 @media only screen and (min-width: 576px) {
@@ -40,9 +42,9 @@ body {
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 925px) {
 	body {
-		width: 1200px;
+		width: 925px;
 	}
 
 	.grid {

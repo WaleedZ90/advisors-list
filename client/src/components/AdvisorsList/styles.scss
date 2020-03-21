@@ -1,2 +1,13 @@
 .advisors-list {
+	&__grid {
+		margin-top: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.advisors-list {
+		&__filters {
+			grid-template-columns: repeat(4, 1fr);
+		}
+	}
 }
